@@ -104,6 +104,10 @@ La parte recursiva extiende el recorrido hacia los artículos hijos (dependiente
 
 El cálculo de la cantidad depende de varias condiciones:
 
+> varcn0 = "LARGO" <br>
+> varcn1 = "ANCHO" <br>
+> varcn2 = "ALTO"
+
 1. Si el artículo tiene una función definida (`AC.funcion`), se utiliza una función externa (`test9000.flowscalcularpresupuesto`) para calcular la cantidad.
 2. Si no hay función, se utiliza el valor de la categoría (`CAT.valor`) para determinar cómo calcular la cantidad:
    - **Valor 0**: Multiplicación directa de la cantidad del nodo padre por la cantidad del nodo hijo.
